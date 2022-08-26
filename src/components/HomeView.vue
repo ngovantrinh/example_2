@@ -44,7 +44,7 @@ export default {
       ];
       const ERRORS = {
         TOO_LARGE: 'Please select files less than 10MP in size.',
-        LIMIT_FILES: 'Exceed the limit of 10 file',
+        LIMIT_FILES: 'Exceed the limit of 10 file.',
         REQUIRED: 'Please select txt, png, jpg, pdf file.',
       };
       const MAX_SIZE = 10000000;
