@@ -25,7 +25,6 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      // file: null,
       listFiles: [],
       numberOfFiles: 0,
       errorFile: null,
@@ -54,11 +53,11 @@ export default {
         if (typesFile.includes(selected.type)) {
           if (this.listFiles.length > MAX_FILE) {
             this.errorFile = ERRORS.LIMIT_FILES;
-            console.log(this.errorFile);
+            // console.log(this.errorFile);
             this.warningStatus = true;
           } else if (selected.size > MAX_SIZE) {
             this.errorFile = ERRORS.TOO_LARGE;
-            console.log(this.errorFile);
+            // console.log(this.errorFile);
             this.warningStatus = true;
           } else {
             this.listFiles.push(selected);
@@ -66,7 +65,7 @@ export default {
           }
         } else {
           this.errorFile = ERRORS.REQUIRED;
-          console.log(this.errorFile);
+          // console.log(this.errorFile);
           this.warningStatus = true;
         }
       }
